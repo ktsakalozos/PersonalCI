@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 
-sudo apt-get -y install juju juju-local charm-tools git python3
+sudo apt-get -y install juju juju-local charm-tools git python3 python3-pip
 sudo pip3 install gitpython
 sudo pip3 install requests
 juju init -f
