@@ -3,8 +3,10 @@
 
 sudo apt-get -y install juju juju-local charm-tools git python3
 sudo pip3 install gitpython
+sudo pip3 install requests
 juju init -f
-juju bootstrap -e local 
+juju destroy-environment -y local
+juju bootstrap -e local
 juju switch local
 juju status
 #mkdir -p ~/workspace/charms/layers
